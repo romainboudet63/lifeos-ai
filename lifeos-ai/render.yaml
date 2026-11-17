@@ -1,0 +1,19 @@
+# Blueprint Render : https://render.com/docs/blueprint-spec
+services:
+  - type: web
+    name: lifeos
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
+    autoDeployTrigger: commit
+    envVars:
+      - key: DATABASE_URL        # chaîne de connexion Neon (voir DEPLOY.md)
+        sync: false
+      - key: ANTHROPIC_API_KEY   # clé console.anthropic.com (sans elle : mode démo)
+        sync: false
+      - key: JWT_SECRET
+        generateValue: true
+      - key: REGISTRATION_MODE
+        value: first_user
+      - key: DEFAULT_TIMEZONE
+        value: Europe/Paris

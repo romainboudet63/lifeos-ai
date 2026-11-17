@@ -1,0 +1,25 @@
+{
+  "expo": {
+    "name": "LifeOS",
+    "slug": "lifeos-mobile",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.lifeos.app"
+    },
+    "android": {
+      "package": "com.lifeos.app"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "name": "LifeOS",
+      "shortName": "LifeOS",
+      "backgroundColor": "#F6F4EE",
+      "themeColor": "#3F7A5C",
+      "favicon": "./public/favicon.png"
+    }
+  }
+}
